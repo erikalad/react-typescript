@@ -1,12 +1,10 @@
-'use client';
 import { RandomFox } from "@/components/RandomFox";
-import React from "react";
 import { useState } from "react";
 
 const random = () => Math.floor(Math.random() * 123) + 1;
 
 export default function Home() {
-  const [images, setImages] = useState<Array<string>>([
+  const [images, setImages] = useState([
     `https://randomfox.ca/images/${random()}.jpg`,
     `https://randomfox.ca/images/${random()}.jpg`,
     `https://randomfox.ca/images/${random()}.jpg`,
